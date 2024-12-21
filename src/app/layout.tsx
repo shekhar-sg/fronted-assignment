@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import {ReactNode} from "react";
-import {AppRouterCacheProvider} from "@mui/material-nextjs/v13-appRouter";
+import ThemeRegistry from "@/styles/theme-registry";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -14,11 +14,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <AppRouterCacheProvider>
+        <ThemeRegistry>
             <body style={{margin: 0, padding: 0}}>
             {children}
             </body>
-        </AppRouterCacheProvider>
+        </ThemeRegistry>
         </html>
     );
 }

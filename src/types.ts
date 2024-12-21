@@ -17,3 +17,19 @@ export interface Section_1_Interface {
     button: string,
     banner: BannerItem[]
 }
+
+
+export interface CardItem {
+    title: string,
+    description: string,
+    image?: string,
+    icon?: FC<IconProps>
+}
+
+export interface Section_2_Interface {
+    heading: string,
+    description: string,
+    centerImage?: string,
+    centerIcon?: FC<IconProps>,
+    cards: CardItem[]
+}
