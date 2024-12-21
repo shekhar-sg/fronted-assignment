@@ -1,4 +1,4 @@
-import {Section_1_Interface, Section_2_Interface, Section_3_Interface} from "@/types";
+import {Section_1_Interface, Section_2_Interface, Section_3_Interface, Section_4_interface} from "@/types";
 import {
     AyurvedaIcon, CirclePattern,
     CustomChatIcon,
@@ -114,4 +114,12 @@ export const Section_3_Data: Section_3_Interface = {
             size: 3
         }
     ]
+}
+
+export const Section_4_Data: Section_4_interface = {
+    heading: "Ready to restore harmony in your mind, body and spirit?",
+    button: "Book a consultation",
+    backgroundImage: "section-4-images/a1.png",
+    backgroundMask: "linear-gradient(180deg, rgba(0, 0, 0, 0.59) 2.52%, rgba(0, 0, 0, 0.53) 22.87%, rgba(14, 14, 14, 0.4) 100%)"
+
 }

@@ -10,8 +10,6 @@ const typographyComponent: NonNullable<ThemeOptions["components"]>["MuiTypograph
                     md: "h2.fontSize",
                     lg: "h1.fontSize",
                 },
-                letterSpacing: 1,
-                color: "text.secondary",
             })
         },
         h2: ({theme}) => {

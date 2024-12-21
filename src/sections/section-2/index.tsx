@@ -20,7 +20,7 @@ const Section_2 = () => {
         >
             <Stack
                 sx={{
-                    width: "70%",
+                    width: "72%",
                     gap: 4,
                     textAlign: "center",
                     alignItems: "center",

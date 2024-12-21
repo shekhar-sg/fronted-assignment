@@ -45,3 +45,10 @@ export interface Section_3_Interface {
     heading: string,
     cards: CardItem3[];
 }
+
+export interface Section_4_interface {
+    heading: string,
+    button: string,
+    backgroundImage: string,
+    backgroundMask: string,
+}

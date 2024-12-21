@@ -2,6 +2,7 @@ import {AppBar, Toolbar} from "@mui/material";
 import Section_1 from "@/sections/section-1";
 import Section_2 from "@/sections/section-2";
 import Section_3 from "@/sections/section-3";
+import Section_4 from "@/sections/section-4";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Section_1/>
             <Section_2/>
             <Section_3/>
+            <Section_4/>
         </>
     )
 }

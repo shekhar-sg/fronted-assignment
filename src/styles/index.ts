@@ -1,6 +1,7 @@
 import {createTheme} from "@mui/material";
 import typographyComponent from "@/styles/mui-custom-components/typography.component";
 import {typography} from "@/styles/utils/typography";
+import buttonComponent from "@/styles/mui-custom-components/button.component";
 
 const materialTheme = createTheme({
     palette: {
@@ -38,13 +39,7 @@ const materialTheme = createTheme({
     },
     typography: typography,
     components: {
-        MuiButton: {
-            styleOverrides: {
-                root: {
-                    textTransform: "none",
-                },
-            },
-        },
+        MuiButton: buttonComponent,
         MuiTypography: typographyComponent
     },
 })
