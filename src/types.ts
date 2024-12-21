@@ -19,7 +19,7 @@ export interface Section_1_Interface {
 }
 
 
-export interface CardItem {
+export interface CardItem2 {
     title: string,
     description: string,
     image?: string,
@@ -31,5 +31,17 @@ export interface Section_2_Interface {
     description: string,
     centerImage?: string,
     centerIcon?: FC<IconProps>,
-    cards: CardItem[]
+    cards: CardItem2[]
+}
+
+export interface CardItem3 {
+    title: string,
+    size: number
+    description?: string,
+    image?: string,
+}
+
+export interface Section_3_Interface {
+    heading: string,
+    cards: CardItem3[];
 }

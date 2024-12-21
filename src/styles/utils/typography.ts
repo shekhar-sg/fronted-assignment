@@ -1,5 +1,12 @@
 import {ThemeOptions} from "@mui/material";
 
+import {Poppins} from "next/font/google"
+
+const poppins = Poppins({
+    subsets: ["latin", "latin-ext"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
+})
+
 export const typography: ThemeOptions['typography'] = () => {
     return ({
         h1: {
@@ -34,7 +41,7 @@ export const typography: ThemeOptions['typography'] = () => {
             lineHeight: "20px"
         },
         allVariants: {
-            fontFamily: "Poppins, sans-serif",
+            ...poppins.style
         }
     })
 }

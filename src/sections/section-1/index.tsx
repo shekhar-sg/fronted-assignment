@@ -1,6 +1,5 @@
 import {Box, Button, Stack, Typography} from "@mui/material";
 import {Section_1_Data} from "@/constants";
-import SectionWrapper from "@/components/section-wrapper";
 import ContentWrapper from "@/components/content-wrapper";
 
 const Section_1 = () => {
@@ -39,7 +38,7 @@ const Section_1 = () => {
                         },
                         background: "#951D1C",
                     }}/>
-                    <Box component={"img"} src={"section-1-background.png"}
+                    <Box component={"img"} src={"section-1-images/section-1-background.png"}
                          sx={{
                              flex: 1,
                              aspectRatio: {
@@ -109,7 +108,8 @@ const Section_1 = () => {
                                     aspectRatio: 1,
                                     flexShrink: 0,
                                 }}/>
-                            <Typography variant={"caption"} textTransform={"capitalize"} lineHeight={"normal"} color={"#3A643B"}
+                            <Typography variant={"caption"} textTransform={"capitalize"} lineHeight={"normal"}
+                                        color={"#3A643B"}
                                         fontWeight={"bold"} fontSize={18}>{about}</Typography>
                         </Stack>
                     ))}

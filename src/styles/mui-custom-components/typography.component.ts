@@ -30,32 +30,29 @@ const typographyComponent: NonNullable<ThemeOptions["components"]>["MuiTypograph
         h3: ({theme}) => {
             return theme.unstable_sx({
                 fontSize: {
-                    xs: "h6.fontSize",
-                    sm: "h5.fontSize",
-                    md: "h4.fontSize",
+                    xs: "h4.fontSize",
+                    md: "h3.fontSize",
                 },
                 letterSpacing: 1,
-                color: "text.secondary",
             })
         },
         h4: ({theme}) => {
             return theme.unstable_sx({
                 fontSize: {
-                    xs: "h6.fontSize",
-                    md: "h5.fontSize",
+                    xs: "h5.fontSize",
+                    md: "h4.fontSize",
                 },
                 letterSpacing: 1,
-                color: "text.secondary",
+                fontWeight: 800,
             })
         },
         h5: ({theme}) => {
             return theme.unstable_sx({
                 fontSize: {
-                    xs: "subtitle1.fontSize",
-                    md: "h6.fontSize",
+                    xs: "h6.fontSize",
+                    md: "h5.fontSize",
+                    // fontWeight: 500
                 },
-                fontWeight: "bolder",
-                color: "text.secondary",
             })
         },
         subtitle2: ({theme}) => {
@@ -69,7 +66,7 @@ const typographyComponent: NonNullable<ThemeOptions["components"]>["MuiTypograph
         },
         body2: ({theme}) => {
             return theme.unstable_sx({
-                fontSize: "subtitle2.fontsize",
+                fontSize: "body1.fontsize",
                 lineHeight: 1.2,
             })
         },

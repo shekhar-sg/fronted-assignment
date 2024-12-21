@@ -1,4 +1,4 @@
-import {Section_1_Interface, Section_2_Interface} from "@/types";
+import {Section_1_Interface, Section_2_Interface, Section_3_Interface} from "@/types";
 import {
     AyurvedaIcon, CirclePattern,
     CustomChatIcon,
@@ -72,5 +72,46 @@ export const Section_2_Data: Section_2_Interface = {
             description: "Stay strong and healthy for life, not just for today.",
             icon: StrongIcon
         },
+    ]
+}
+
+export const Section_3_Data: Section_3_Interface = {
+    heading: "What sets Ayurvedic consultations apart?",
+    cards: [
+        {
+            title: "स्वस्थस्य स्वास्थ्य रक्षणं, आतुरस्य विकार प्रशमनं ।",
+            description: "[ Meaning: The Goal of Ayurveda is to maintain the health of a healthy person and to cure the disease of a diseased person. ]",
+            size: 5.2
+        },
+        {
+            title: "image-1",
+            image: "section-3-images/a2.png",
+            size: 3.8
+        },
+        {
+            title: "precise diagnosis",
+            description: "Ayurveda's core principles revolve around Vata, Pitta, and Kapha doshas, guiding you with precise diagnosis and treatment.",
+            size: 3
+        },
+        {
+            title: "Zero side-effects",
+            description: "Ayurvedic treatments are devoid of chemicals, and are based completely on natural herbs",
+            size: 3
+        },
+        {
+            title: "image-2",
+            image: "section-3-images/a1.png",
+            size: 3
+        },
+        {
+            title: "Individual Treatment\n",
+            description: "all Treatments are personalized based on a person's unique constitution and health concerns.",
+            size: 3
+        },
+        {
+            title: "image-3",
+            image: "section-3-images/a3.png",
+            size: 3
+        }
     ]
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Section_2_Data} from "@/constants";
 import {Box, Stack, Typography} from "@mui/material";
-import Card2 from "@/components/cards/card-2";
+import Card2 from "@/sections/section-2/card-2";
 import {SittingPosition} from "@/icons";
 import ContentWrapper from "@/components/content-wrapper";
 
