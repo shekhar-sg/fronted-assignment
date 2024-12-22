@@ -7,7 +7,8 @@ const materialTheme = createTheme({
     palette: {
         primary: {
             main: "#3A643B",
-            light: "#C3D0C4"
+            light: "#C3D0C4",
+            dark:"#3A643BA8",
         },
         warning: {
             main: "#951D1C",

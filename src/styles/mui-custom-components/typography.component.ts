@@ -62,6 +62,12 @@ const typographyComponent: NonNullable<ThemeOptions["components"]>["MuiTypograph
                 lineHeight: 1.4,
             })
         },
+        body1: ({theme}) => {
+            return theme.unstable_sx({
+                fontSize: "body1.fontsize",
+                lineHeight: 1.4,
+            })
+        },
         body2: ({theme}) => {
             return theme.unstable_sx({
                 fontSize: "body1.fontsize",

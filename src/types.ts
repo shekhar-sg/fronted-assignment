@@ -52,3 +52,15 @@ export interface Section_4_interface {
     backgroundImage: string,
     backgroundMask: string,
 }
+
+export interface CardItem5 {
+    title: string,
+    description: string,
+    avatar: string
+}
+
+export interface Section_5_interface {
+    heading: string,
+    description: string,
+    cards: CardItem5[]
+}
