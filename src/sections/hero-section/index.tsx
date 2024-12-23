@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { HeroSectionData } from "@/constants";
 import SectionWrapper from "@/components/section-wrapper";
 import { NexaFont } from "@/styles/font";
@@ -10,10 +10,14 @@ const HeroSection = () => {
     <SectionWrapper
       SectionProps={{
         sx: {
+          px: {
+            xs: 0.5,
+            sm: 0,
+          },
           position: "relative",
           background: {
-            xs: "linear-gradient(180deg, rgba(24, 24, 24, 0.87) 0%, rgba(34, 34, 34, 0.48) 100%)",
-            sm: "linear-gradient(90deg, rgba(18, 18, 18, 0.94) 1%, rgba(18, 18, 18, 0.94) 47%, rgba(1, 1, 1, 0) 70%), linear-gradient(90deg, #951D1C 1%, #951D1C 47%, rgba(1, 1, 1, 0) 47%)",
+            xs: "linear-gradient(180deg, rgba(24, 24, 24, 0.87) 0%, rgba(34, 34, 34, 0.48) 100%), url(/hero-images/hero-background-small.png) right/cover no-repeat",
+            md: "linear-gradient(90deg, rgba(18, 18, 18, 0.94) 1%, rgba(18, 18, 18, 0.94) 47%, rgba(1, 1, 1, 0) 70%), linear-gradient(90deg, #951D1C 1%, #951D1C 47%, rgba(1, 1, 1, 0) 47%)",
           },
           "&:before": {
             content: "''",
@@ -22,13 +26,11 @@ const HeroSection = () => {
             height: "100%",
             zIndex: -1,
             width: {
-              xs: "100%",
-              md: "70%",
-              lg: "53%",
+              xs: 1,
+              lg: 0.53,
             },
             backgroundImage: {
-              xs: "url(/hero-images/hero-background-small.png)",
-              sm: "url(/hero-images/hero-background-large.png)",
+              md: "url(/hero-images/hero-background-large.png)",
             },
             backgroundPosition: "center",
             backgroundSize: "cover",
@@ -38,45 +40,46 @@ const HeroSection = () => {
       }}
       Tag={tag}
       TagTypographyProps={{
+        color: "secondary",
         sx: {
           ...NexaFont.style,
-          lineHeight: {
-            xs: "16px",
-            md: "28px",
-          },
         },
       }}
       Title={
         <>
           {Title[0].trim()}{" "}
-          <Box
+          <Typography
+            variant={"inherit"}
             component="span"
-            sx={{ textDecoration: "underline", color: "secondary.main" }}
+            color={"secondary"}
+            sx={{ textDecoration: "underline" }}
           >
             Ayurveda
-          </Box>
+          </Typography>
           <br />
           {Title[1]}
         </>
       }
       TitleTypographyProps={{
+        color: "textSecondary",
         sx: {
           mb: 2,
-          lineHeight: {
-            xs: "33.6px",
-            md: "67.2px",
-          },
         },
       }}
       Description={description}
       DescriptionTypographyProps={{
         sx: {
-          mb: 6,
-          maxWidth: 788,
-          lineHeight: {
-            xs: "19.6px",
-            md: "28px",
+          width:{
+            xs:0.97,
+            sm:1
           },
+          color: "grey.100",
+          fontWeight: 500,
+          mb: {
+            xs: 5,
+            md: 6,
+          },
+          maxWidth: 788,
         },
       }}
       sx={{

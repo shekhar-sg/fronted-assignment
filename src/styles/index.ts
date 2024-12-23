@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material";
 import TypographyComponent from "@/styles/mui-custom-components/typography.component";
 import { typography } from "@/styles/utils/typography";
 import ButtonComponent from "@/styles/mui-custom-components/button.component";
-import { breakpoint } from "@/styles/utils/breakpoint";
+import { breakpoints } from "@/styles/utils/breakpoint";
 import CssBaseline from "@/styles/mui-custom-components/cssbaseline.component";
 
 const materialTheme = createTheme({
@@ -10,7 +10,6 @@ const materialTheme = createTheme({
     primary: {
       main: "#3A643B",
       light: "#C3D0C4",
-      dark: "#3A643BA8",
     },
     warning: {
       main: "#951D1C",
@@ -18,6 +17,14 @@ const materialTheme = createTheme({
     secondary: {
       main: "#FFF7E2",
       dark: "#FFF1CF",
+    },
+    background: {
+      paper: "#FFF7E2",
+      default: "#FFFFFF",
+    },
+    common: {
+      white: "#FFFFFF",
+      black: "#000000",
     },
     text: {
       primary: "#000000",
@@ -30,9 +37,6 @@ const materialTheme = createTheme({
       main: "#ECE7FF",
     },
     grey: {
-      // 100: "#F8F8F8",
-      // 200: "#E0E0E0",
-      // 200: "#A0A0A0",
       50: "#E9E9E9",
       100: "#C9C9C9",
       200: "#838383",
@@ -50,7 +54,7 @@ const materialTheme = createTheme({
     MuiButton: ButtonComponent,
     MuiTypography: TypographyComponent,
   },
-  breakpoints: breakpoint(),
+  breakpoints: breakpoints,
 });
 
 export default materialTheme;

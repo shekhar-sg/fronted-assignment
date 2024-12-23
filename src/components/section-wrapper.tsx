@@ -93,11 +93,16 @@ const contentSx: SxProps<Theme> = {
   width: 1,
   mx: "auto",
   maxWidth: 1440,
-  px: 12.5,
+  px: {
+    xs: 2,
+    md: 3,
+    lg:12.5
+  },
   textAlign: "center",
 };
 
 const tagSx: SxProps<Theme> = {
+  display:'block',
   mb: 1,
   lineHeight: 1,
 };
