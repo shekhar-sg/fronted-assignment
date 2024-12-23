@@ -1,20 +1,19 @@
-import {ThemeOptions} from "@mui/material";
+import { Components, Theme } from "@mui/material";
 
-const buttonComponent: NonNullable<ThemeOptions["components"]>["MuiButton"] = {
-    variants: [
-        {
-            props: {variant: "contained"},
-            style: {
-                width: "fit-content",
-                background: "#3A643B",
-                color: "#FFFFFF",
-                textTransform: "capitalize",
-                padding: "20px 40px",
-                borderRadius: "16px",
-                fontSize: 20,
-            }
-        }
-    ]
-}
+const ButtonComponent: Components<Theme>["MuiButton"] = {
+  styleOverrides: {
+    root: ({ theme }) => {
+      return theme.unstable_sx({
+        borderRadius: {
+          xs: 1.25,
+          md: 2,
+        },
+        fontSize: 20,
+        fontWeight: 500,
+        padding: "17.5px 40px",
+      });
+    },
+  },
+};
 
-export default buttonComponent;
+export default ButtonComponent;
