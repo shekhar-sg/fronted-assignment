@@ -17,7 +17,8 @@ const HeroSection = () => {
           position: "relative",
           background: {
             xs: "linear-gradient(180deg, rgba(24, 24, 24, 0.87) 0%, rgba(34, 34, 34, 0.48) 100%), url(/hero-images/hero-background-small.png) right/cover no-repeat",
-            md: "linear-gradient(90deg, rgba(18, 18, 18, 0.94) 1%, rgba(18, 18, 18, 0.94) 47%, rgba(1, 1, 1, 0) 70%), linear-gradient(90deg, #951D1C 1%, #951D1C 47%, rgba(1, 1, 1, 0) 47%)",
+            sm: "linear-gradient(90deg, rgba(18, 18, 18, 0.94) 1%, rgba(18, 18, 18, 0.94) 30%, rgba(1, 1, 1, 0) 85%), url(/hero-images/hero-background-medium.png)  top/cover no-repeat",
+            lg: "linear-gradient(90deg, rgba(18, 18, 18, 0.94) 1%, rgba(18, 18, 18, 0.94) 47%, rgba(1, 1, 1, 0) 70%), linear-gradient(90deg, #951D1C 1%, #951D1C 47%, rgba(1, 1, 1, 0) 47%)",
           },
           "&:before": {
             content: "''",
@@ -30,7 +31,7 @@ const HeroSection = () => {
               lg: 0.53,
             },
             backgroundImage: {
-              md: "url(/hero-images/hero-background-large.png)",
+              lg: "url(/hero-images/hero-background-large.png)",
             },
             backgroundPosition: "center",
             backgroundSize: "cover",
