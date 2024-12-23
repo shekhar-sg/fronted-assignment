@@ -97,7 +97,10 @@ const DiscoverAyurveda = () => {
         </Stack>
         <Box
           sx={{
-            width: 0.4,
+            width: {
+              xs: "max(210px, 60%)",
+              lg: 0.4,
+            },
             maxWidth: 505,
             aspectRatio: 1,
             order: {
