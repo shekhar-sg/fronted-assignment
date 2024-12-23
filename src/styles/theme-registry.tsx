@@ -11,11 +11,7 @@ interface ThemeRegistryProps {
 const ThemeRegistry = (props: ThemeRegistryProps) => {
   const { children } = props;
   return (
-    <AppRouterCacheProvider
-      options={{
-        speedy: true,
-      }}
-    >
+    <AppRouterCacheProvider>
       <ThemeProvider theme={materialTheme}>
         <CssBaseline enableColorScheme />
         {children}

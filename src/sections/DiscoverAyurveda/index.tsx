@@ -1,12 +1,15 @@
 "use client";
 import { DiscoverAyurvedaSectionData } from "@/constants";
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Theme, useMediaQuery } from "@mui/material";
 import SectionWrapper from "@/components/section-wrapper";
 import Yoga from "@/sections/DiscoverAyurveda/icons/yoga";
-import Card2 from "@/sections/DiscoverAyurveda/card-2";
+import YogaCards from "@/sections/DiscoverAyurveda/yoga-cards";
 
 const { heading, description, cards } = DiscoverAyurvedaSectionData;
 const DiscoverAyurveda = () => {
+  const isLg = useMediaQuery((theme: Theme) => theme.breakpoints.up("lg"), {
+    defaultMatches: true,
+  });
   return (
     <SectionWrapper
       titleUnderlined
@@ -30,49 +33,63 @@ const DiscoverAyurveda = () => {
             lg: "row",
           },
           columnGap: 2,
+          rowGap: 1,
           flexWrap: "nowrap",
-          justifyContent: "center",
-          alignItems: "flex-start",
+          justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
         <Stack
           sx={{
+            order: {
+              xs: 1,
+              lg: 0,
+            },
             width: {
               xs: 1,
               lg: 0.3,
             },
-            gap: {
-              xs: 2,
+            columnGap: 2.5,
+            rowGap: {
+              xs: 3,
+              md: 0,
               lg: 9,
             },
             flexDirection: {
               xs: "row",
-              lg: "column",
+              md: "column",
             },
-            flexWrap: "wrap",
+            flexWrap: {
+              xs: "wrap",
+              md: "nowrap",
+            },
           }}
         >
-          {cards.slice(0, 3).map((card, index) => {
+          {(isLg ? cards.slice(0, 3) : cards).map((card, index) => {
             return (
-              <Card2
+              <YogaCards
                 data={card}
                 key={card.title}
                 sx={{
                   flexDirection: {
                     xs: "column",
+                    md: index % 2 ? "row-reverse" : "row",
                     lg: index < 3 ? "row-reverse" : "row",
                   },
                   textAlign: {
                     xs: "center",
+                    md: index % 2 ? "right" : "left",
                     lg: index < 3 ? "right" : "left",
                   },
-                  marginLeft:
-                    index % 2
-                      ? 0
-                      : {
-                          xs: 0,
-                          lg: 6,
-                        },
+                  width: {
+                    xs: "calc((100% - 20px)/2)",
+                    md: 0.55,
+                  },
+                  marginLeft: {
+                    xs: 0,
+                    md: index % 2 ? "auto" : 0,
+                    lg: index % 2 ? 0 : 6,
+                  },
                 }}
               />
             );
@@ -84,8 +101,8 @@ const DiscoverAyurveda = () => {
             maxWidth: 505,
             aspectRatio: 1,
             order: {
-              xs: -1,
-              lg: 0,
+              xs: 0,
+              lg: 1,
             },
           }}
         >
@@ -96,49 +113,56 @@ const DiscoverAyurveda = () => {
             }}
           />
         </Box>
-        <Stack
-          sx={{
-            width: {
-              xs: 1,
-              lg: 0.3,
-            },
-            gap: {
-              xs: 2,
-              lg: 9,
-            },
-            flexDirection: {
-              xs: "row",
-              lg: "column",
-            },
-            flexWrap: "wrap",
-          }}
-        >
-          {cards.slice(3).map((card, index) => {
-            return (
-              <Card2
-                data={card}
-                key={card.title}
-                sx={{
-                  marginLeft:
-                    index % 2
-                      ? 0
-                      : {
-                          xs: 0,
-                          lg: -6,
-                        },
-                  flexDirection: {
-                    xs: "column",
-                    lg: "row",
-                  },
-                  textAlign: {
-                    xs: "center",
-                    lg: "initial",
-                  },
-                }}
-              />
-            );
-          })}
-        </Stack>
+        {isLg && (
+          <Stack
+            sx={{
+              display: {
+                xs: "none",
+                lg: "flex",
+              },
+              order: 2,
+              width: {
+                xs: 1,
+                lg: 0.3,
+              },
+              gap: {
+                xs: 2,
+                lg: 9,
+              },
+              flexDirection: {
+                xs: "row",
+                lg: "column",
+              },
+              flexWrap: "wrap",
+            }}
+          >
+            {cards.slice(3).map((card, index) => {
+              return (
+                <YogaCards
+                  data={card}
+                  key={card.title}
+                  sx={{
+                    marginLeft:
+                      index % 2
+                        ? 0
+                        : {
+                            xs: 0,
+                            lg: -6,
+                          },
+                    flexDirection: {
+                      xs: "column",
+                      lg: "row",
+                    },
+                    textAlign: {
+                      xs: "center",
+                      lg: "initial",
+                    },
+                  }}
+                />
+              );
+            })}
+          </Stack>
+        )}
       </Stack>
     </SectionWrapper>
   );
