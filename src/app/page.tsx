@@ -2,6 +2,7 @@ import HeroSection from "../sections/hero-section";
 import DiscoverAyurveda from "../sections/DiscoverAyurveda";
 import AyurvedicConsultation from "@/sections/ayurvedic-consultations";
 import RestoreHarmony from "../sections/restore-harmony";
+import AyurvedicApproach from "@/sections/ayurvedic-approach";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <DiscoverAyurveda />
       <AyurvedicConsultation />
       <RestoreHarmony />
+      <AyurvedicApproach />
     </>
   );
 };

@@ -6,7 +6,7 @@ interface Card5Props {
   data: CardItem5;
 }
 
-const Card5 = (props: Card5Props) => {
+const ApproachCard = (props: Card5Props) => {
   const {
     data: { title, description, avatar },
   } = props;
@@ -17,13 +17,16 @@ const Card5 = (props: Card5Props) => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        p: 1,
-        width: 290,
+        p: 1.5,
+        minWidth: 290,
+        // width: 1,
+        height: 315,
         aspectRatio: 58 / 63,
         borderRadius: 5,
         bgcolor: "secondary.main",
         borderTop: (theme) => `4px solid ${theme.palette.primary.main}`,
         gap: 2,
+        boxShadow: "0px 4px 9px 0px #0000001C",
       }}
     >
       <Avatar
@@ -50,14 +53,19 @@ const Card5 = (props: Card5Props) => {
         }}
       >
         <Typography
-          variant={"subtitle1"}
+          // variant={"subtitle1"}
           fontWeight={700}
           whiteSpace={"nowrap"}
           color={"primary"}
+          fontSize={"24px !important"}
         >
           {title}
         </Typography>
-        <Typography variant={"body1"} lineHeight={1.4}>
+        <Typography
+          variant={"body1"}
+          lineHeight={1.4}
+          fontSize={"20px !important"}
+        >
           {description}
         </Typography>
       </CardContent>
@@ -65,4 +73,4 @@ const Card5 = (props: Card5Props) => {
   );
 };
 
-export default Card5;
+export default ApproachCard;

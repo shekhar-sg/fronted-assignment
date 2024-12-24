@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import ThemeRegistry from "@/styles/theme-registry";
 import "swiper/css";
+import "../../node_modules/swiper/swiper-bundle.min.css";
 import { Box } from "@mui/material";
 
 export const metadata: Metadata = {
