@@ -1,13 +1,16 @@
 "use client";
-import SectionWrapper from "@/components/section-wrapper";
-import { AyurvedicApproachSectionData } from "@/constants";
-import ApproachCard from "@/sections/ayurvedic-approach/approach-card";
 import { Stack } from "@mui/material";
+import SectionWrapper from "@/components/section-wrapper";
+import { CustomerStoriesSectionData } from "@/constants";
+import { CardItem6 } from "@/types";
+import ReviewCard from "@/sections/customers-review/review-card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
-const { heading, description, cards } = AyurvedicApproachSectionData;
-const AyurvedicApproach = () => {
+const { heading, cards } = CustomerStoriesSectionData;
+const repeatedCards: CardItem6[] = Array(5).fill(cards[0]);
+
+const CustomersReview = () => {
   return (
     <SectionWrapper
       Title={heading}
@@ -15,16 +18,9 @@ const AyurvedicApproach = () => {
         textTransform: "capitalize",
       }}
       titleUnderlined
-      Description={description}
-      DescriptionTypographyProps={{
-        sx: {
-          maxWidth: 720,
-          mx: "auto",
-          mb: 5,
-        },
-      }}
       SectionProps={{
         sx: {
+          bgcolor: "background.paper",
           padding: {
             xs: "45px 0",
             sm: "45px 0",
@@ -53,10 +49,22 @@ const AyurvedicApproach = () => {
               xs: 0,
               sm: 25,
             },
+            display: "flex",
+            flexDirection: "row",
+            gap: 3.75,
+            justifyContent: "center",
+            "& .swiper-pagination-bullet": {
+              height: 12,
+              width: 12,
+            },
+            "& .swiper-pagination-bullet-active": {
+              bgcolor: "primary.main",
+            },
           },
         }}
         slidesPerView={"auto"}
-        spaceBetween={12}
+        spaceBetween={16}
+        centeredSlides={true}
         modules={[Pagination]}
         pagination={{
           clickable: true,
@@ -68,16 +76,18 @@ const AyurvedicApproach = () => {
           },
           600: {
             centeredSlides: true,
+            spaceBetween: 32,
           },
           960: {
+            spaceBetween: 32,
             centeredSlides: false,
           },
         }}
       >
-        {cards.map((cardData, index) => {
+        {repeatedCards.map((cardData, index) => {
           return (
-            <SwiperSlide key={index}>
-              <ApproachCard data={cardData} />
+            <SwiperSlide key={index} style={{ width: "auto" }}>
+              <ReviewCard data={cardData} />
             </SwiperSlide>
           );
         })}
@@ -86,4 +96,4 @@ const AyurvedicApproach = () => {
   );
 };
 
-export default AyurvedicApproach;
+export default CustomersReview;

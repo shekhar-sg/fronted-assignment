@@ -1,7 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import { HeroSectionData } from "@/constants";
 import SectionWrapper from "@/components/section-wrapper";
-import { NexaFont } from "@/styles/font";
+import { nexa } from "@/styles/font";
 
 const { tag, title, description, button } = HeroSectionData;
 const Title = title.split("Ayurveda");
@@ -43,7 +43,7 @@ const HeroSection = () => {
       TagTypographyProps={{
         color: "secondary",
         sx: {
-          ...NexaFont.style,
+          ...nexa.style,
         },
       }}
       Title={

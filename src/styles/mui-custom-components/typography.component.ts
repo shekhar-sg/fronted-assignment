@@ -92,6 +92,19 @@ const TypographyComponent: Components<Theme>["MuiTypography"] = {
       });
     },
   },
+  variants: [
+    {
+      props: { className: "reviewer" },
+      style: ({ theme }) =>
+        theme.unstable_sx({
+          fontSize: {
+            xs: 16,
+            sm: 20,
+          },
+          fontWeight: 500,
+        }),
+    },
+  ],
 };
 
 export default TypographyComponent;

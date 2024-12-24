@@ -17,7 +17,7 @@ export const dm_sans = DM_Sans({
   display: "swap",
 });
 
-export const DinProFont = localFont({
+export const dinPro = localFont({
   display: "swap",
   preload: true,
   src: [
@@ -39,7 +39,7 @@ export const DinProFont = localFont({
   ],
 });
 
-export const NexaFont = localFont({
+export const nexa = localFont({
   display: "swap",
   preload: true,
   src: [
@@ -51,7 +51,7 @@ export const NexaFont = localFont({
   ],
 });
 
-export const GothamRoundedFont = localFont({
+export const gothamRounded = localFont({
   display: "swap",
   preload: true,
   src: [

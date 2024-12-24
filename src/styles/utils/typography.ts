@@ -1,9 +1,9 @@
 import { ThemeOptions } from "@mui/material";
-import { DinProFont } from "@/styles/font";
+import { dinPro } from "@/styles/font";
 
 export const typography: ThemeOptions["typography"] = () => {
   return {
-    fontFamily: DinProFont.style.fontFamily,
+    fontFamily: dinPro.style.fontFamily,
     h1: {
       fontSize: 64,
     },
