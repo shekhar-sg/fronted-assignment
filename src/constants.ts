@@ -150,7 +150,7 @@ export const AyurvedicConsultationsSectionData = {
     },
     {
       title: "image-2",
-      image: "ayurvedic-consultation-images/a1.png",
+      image: "ayurvedic-consultation-images/restore-harmony-background.png",
       size: {
         xs: 12,
         sm: 6,
@@ -197,9 +197,8 @@ export const AyurvedicConsultationsSectionData = {
 export const RestoreHarmonySectionData = {
   heading: "Ready to restore harmony in your mind, body and spirit?",
   button: "Book a consultation",
-  backgroundImage: "RestoreHarmony-images/a1.png",
-  backgroundMask:
-    "linear-gradient(180deg, rgba(0, 0, 0, 0.59) 2.52%, rgba(0, 0, 0, 0.53) 22.87%, rgba(14, 14, 14, 0.4) 100%)",
+  backgroundImage: "restore-harmony-images/restore-harmony-background.png",
+  // backgroundMask: "linear-gradient(180deg, rgba(0, 0, 0, 0.59) 2.52%, rgba(0, 0, 0, 0.53) 22.87%, rgba(14, 14, 14, 0.4) 100%)",
 };
 
 export const AyurvedicApproachSectionData = {

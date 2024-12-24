@@ -11,7 +11,7 @@ const TypographyComponent: Components<Theme>["MuiTypography"] = {
       return theme.unstable_sx({
         fontSize: {
           xs: "h4.fontSize",
-          sm: "h3.fontSize",
+          sm: "h2.fontSize",
           md: "h1.fontSize",
         },
         fontWeight: 700,

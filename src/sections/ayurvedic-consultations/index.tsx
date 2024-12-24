@@ -4,8 +4,8 @@ import SectionWrapper from "@/components/section-wrapper";
 import { AyurvedicConsultationsSectionData } from "@/constants";
 import Card3 from "@/sections/ayurvedic-consultations/card-3";
 
+const { heading, cards } = AyurvedicConsultationsSectionData;
 const AyurvedicConsultation = () => {
-  const { heading, cards } = AyurvedicConsultationsSectionData;
   return (
     <SectionWrapper
       SectionProps={{
