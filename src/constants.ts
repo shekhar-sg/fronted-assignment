@@ -94,40 +94,102 @@ export const AyurvedicConsultationsSectionData = {
       title: "स्वस्थस्य स्वास्थ्य रक्षणं, आतुरस्य विकार प्रशमनं ।",
       description:
         "[ Meaning: The Goal of Ayurveda is to maintain the health of a healthy person and to cure the disease of a diseased person. ]",
-      size: 5.2,
+      size: {
+        xs: 12,
+        md: 5.2,
+      },
+      order: {
+        xs: 1,
+        sm: 1,
+        md: "auto",
+      },
     },
     {
       title: "image-1",
-      image: "ayurvedic-consultations-images/a2.png",
-      size: 3.8,
+      image: "/ayurvedic-consultation-images/a2.png",
+      size: {
+        xs: 12,
+        sm: 6,
+        md: 3.8,
+      },
+      order: {
+        xs: 2,
+        sm: 0,
+        md: 0,
+      },
     },
     {
       title: "precise diagnosis",
       description:
         "Ayurveda's core principles revolve around Vata, Pitta, and Kapha doshas, guiding you with precise diagnosis and treatment.",
-      size: 3,
+      size: {
+        xs: 12,
+        sm: 6,
+        md: 3,
+      },
+      order: {
+        xs: 3,
+        sm: 0,
+        md: 0,
+      },
     },
     {
       title: "Zero side-effects",
       description:
         "Ayurvedic treatments are devoid of chemicals, and are based completely on natural herbs",
-      size: 3,
+      size: {
+        xs: 12,
+        sm: 6,
+        md: 3,
+      },
+      order: {
+        xs: 5,
+        sm: 4,
+        md: 0,
+      },
     },
     {
       title: "image-2",
-      image: "ayurvedic-consultations-images/a1.png",
-      size: 3,
+      image: "ayurvedic-consultation-images/a1.png",
+      size: {
+        xs: 12,
+        sm: 6,
+        md: 3,
+      },
+      order: {
+        xs: 6,
+        sm: 5,
+        md: 0,
+      },
     },
     {
       title: "Individual Treatment\n",
       description:
         "all Treatments are personalized based on a person's unique constitution and health concerns.",
-      size: 3,
+      size: {
+        xs: 12,
+        sm: 6,
+        md: 3,
+      },
+      order: {
+        xs: 7,
+        sm: 6,
+        md: 0,
+      },
     },
     {
       title: "image-3",
-      image: "ayurvedic-consultations-images/a3.png",
-      size: 3,
+      image: "ayurvedic-consultation-images/a3.png",
+      size: {
+        xs: 12,
+        sm: 6,
+        md: 3,
+      },
+      order: {
+        xs: 6,
+        // sm: 6,
+        md: 7,
+      },
     },
   ],
 };
