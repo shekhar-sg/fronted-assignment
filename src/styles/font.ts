@@ -56,9 +56,14 @@ export const gothamRounded = localFont({
   preload: true,
   src: [
     {
-      path: "./fonts/Gotham Rounded Light.otf",
+      path: "./fonts/Gotham Rounded Book.otf",
       style: "normal",
-      weight: "400",
+      weight: "350",
     },
+    // {
+    //   path: "./fonts/Gotham Rounded Book.otf",
+    //   style: "normal",
+    //   weight: "400",
+    // },
   ],
 });

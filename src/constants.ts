@@ -258,7 +258,7 @@ export const CustomerStoriesSectionData = {
         date: "17/02/24",
       },
       review: {
-        rating: 4,
+        rating: "4.5",
         service: "“One of a kind service”",
         comment:
           "Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra diam sit amet nisl suscipit adipis.",
@@ -272,14 +272,14 @@ export const AyurvedaExpertsSectionData = {
   cards: [
     {
       name: "Dr. Vaishali sharma",
-      avatar: "",
       ratings: 4.5,
       qualification: "Ayurveda Practitioner (BAMS, MD)",
       experience: "25 years of experience",
       speciality: "Skin Specialist",
+      cardButton: "Book a session",
     },
   ],
-  button: "find more experts",
+  sectionButton: "Find more experts",
 };
 
 export const AyurvedaAppSectionData = {

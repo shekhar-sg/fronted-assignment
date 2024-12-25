@@ -4,6 +4,7 @@ import AyurvedicConsultation from "@/sections/ayurvedic-consultations";
 import RestoreHarmony from "../sections/restore-harmony";
 import AyurvedicApproach from "@/sections/ayurvedic-approach";
 import CustomersReview from "@/sections/customers-review";
+import AyurvedaExperts from "@/sections/ayurveda-experts";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <RestoreHarmony />
       <AyurvedicApproach />
       <CustomersReview />
+      <AyurvedaExperts />
     </>
   );
 };

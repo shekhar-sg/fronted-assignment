@@ -21,10 +21,7 @@ const CustomersReview = () => {
       SectionProps={{
         sx: {
           bgcolor: "background.paper",
-          padding: {
-            xs: "45px 0",
-            sm: "45px 0",
-          },
+          padding: "45px 0",
         },
       }}
     >
