@@ -18,7 +18,7 @@ const WelcomeSectionData = {
     title: "Book an Appointment",
     href: "#",
   },
-  offers: [
+  features: [
     {
       icon: SpeechIcon,
       about: "convenient online & In-clinic consultations",
