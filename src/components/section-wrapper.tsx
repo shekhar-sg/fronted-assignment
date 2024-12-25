@@ -54,13 +54,18 @@ const SectionWrapper = (props: ContentWrapperProps) => {
         {Title && (
           <Typography
             variant={"h2"}
+            component={"h2"}
             color={"primary"}
             {...TitleTypographyProps}
             sx={[
               {
                 mb: Description ? 3 : 7,
-                textDecoration: titleUnderlined ? "underline" : "none",
-                textDecorationColor: (theme) => theme.palette.primary.light,
+                textDecoration: {
+                  lg: titleUnderlined ? "underline" : "none",
+                },
+                textDecorationColor: (theme) => ({
+                  lg: theme.palette.primary.light,
+                }),
               },
               ...sxToArray(TitleTypographyProps?.sx),
             ]}
@@ -90,19 +95,20 @@ const sectionSx: SxProps<Theme> = {
 };
 
 const contentSx: SxProps<Theme> = {
+  overflow: "hidden",
   width: 1,
   mx: "auto",
   maxWidth: 1440,
   px: {
     xs: 2,
     md: 3,
-    lg:12.5
+    lg: 12.5,
   },
   textAlign: "center",
 };
 
 const tagSx: SxProps<Theme> = {
-  display:'block',
+  display: "block",
   mb: 1,
   lineHeight: 1,
 };

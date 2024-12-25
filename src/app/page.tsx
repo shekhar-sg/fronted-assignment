@@ -1,21 +1,25 @@
-import HeroSection from "../sections/hero-section";
-import DiscoverAyurveda from "../sections/DiscoverAyurveda";
-import AyurvedicConsultation from "@/sections/ayurvedic-consultations";
-import RestoreHarmony from "../sections/restore-harmony";
-import AyurvedicApproach from "@/sections/ayurvedic-approach";
-import CustomersReview from "@/sections/customers-review";
-import AyurvedaExperts from "@/sections/ayurveda-experts";
+import Welcome from "@/sections/Welcome";
+import Discover from "@/sections/Discover";
+import Consultation from "@/sections/Consultation";
+import MiddleBanner from "@/sections/MiddleBanner";
+import Approach from "@/sections/Approach";
+import CustomerStories from "@/sections/CustomerStories";
+import Experts from "@/sections/Experts";
+import MobileApp from "@/sections/MobileApp";
+
+;
 
 const Home = () => {
   return (
     <>
-      <HeroSection />
-      <DiscoverAyurveda />
-      <AyurvedicConsultation />
-      <RestoreHarmony />
-      <AyurvedicApproach />
-      <CustomersReview />
-      <AyurvedaExperts />
+      <Welcome />
+      <Discover />
+      <Consultation />
+      <MiddleBanner />
+      <Approach />
+      <CustomerStories />
+      <Experts />
+      <MobileApp />
     </>
   );
 };
