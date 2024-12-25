@@ -1,11 +1,11 @@
 "use client";
-import { Box, Stack, type Theme, useMediaQuery } from "@mui/material";
+import { Stack, type Theme, useMediaQuery } from "@mui/material";
 import SectionWrapper from "@/components/section-wrapper";
-import Yoga from "./icons/yoga";
 import YogaCards from "./yoga-cards";
 import DiscoverSectionData from "@/data/Discover";
+import Image from "next/image";
 
-const { heading, description, cards } = DiscoverSectionData;
+const { heading, description, image, cards } = DiscoverSectionData;
 const Discover = () => {
   const isLg = useMediaQuery((theme: Theme) => theme.breakpoints.up("lg"), {
     defaultMatches: true,
@@ -95,7 +95,7 @@ const Discover = () => {
             );
           })}
         </Stack>
-        <Box
+        <Stack
           sx={{
             width: {
               xs: "max(210px, 60%)",
@@ -109,13 +109,16 @@ const Discover = () => {
             },
           }}
         >
-          <Yoga
+          <Image
+            src={image}
+            alt={heading}
             style={{
               width: "100%",
               height: "100%",
+              objectFit: "contain",
             }}
           />
-        </Box>
+        </Stack>
         {isLg && (
           <Stack
             sx={{

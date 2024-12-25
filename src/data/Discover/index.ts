@@ -6,11 +6,13 @@ import {
   RibbonIcon,
   StrongIcon,
 } from "@/icons";
+import yoga from './assets/yoga.png'
 
 const DiscoverSectionData = {
   heading: "Discover Ayurveda’s magic with us",
   description:
     "Ayurvedic treatment aims to balance your body and mind, bringing harmony and vitality. It's like a journey to better health using ancient wisdom, a totally effective approach for a better life.",
+  image:yoga,
   cards: [
     {
       title: "Personalized Wellness",
