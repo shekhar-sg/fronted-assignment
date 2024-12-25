@@ -48,9 +48,9 @@ const Experts = () => {
             mt: "15%",
             width: 70,
             height: 70,
-            border: (theme) => `1px solid ${theme.palette.grey.A100}`,
+            border: (theme) => `1px solid ${theme.palette.grey[200]}`,
             borderRadius: 100,
-            color: "grey.A100",
+            color: "grey.200",
           },
         }}
       >

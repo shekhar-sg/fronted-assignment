@@ -55,7 +55,6 @@ const MobileApp = () => {
         <Typography
           variant={"subtitle1"}
           sx={{
-            color: "grey.300",
             mb: { md: 3 },
             width: {
               xs: 0.8,
@@ -90,6 +89,9 @@ const MobileApp = () => {
             xs: 0.8,
             md: "auto",
           }}
+          sx={{
+            color: "common.black",
+          }}
         >
           {subtitle}
         </Typography>
@@ -98,6 +100,7 @@ const MobileApp = () => {
           fontSize={"36px !important"}
           sx={{
             marginBottom: 3.5,
+            color: "common.black",
           }}
           textTransform={"capitalize"}
         >

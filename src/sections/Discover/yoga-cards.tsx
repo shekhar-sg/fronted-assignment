@@ -62,13 +62,18 @@ const YogaCards = (props: YogaCardsProps) => {
           gap: 1,
         }}
       >
-        <Typography variant={"body1"} fontWeight={700}>
+        <Typography
+          variant={"body1"}
+          fontWeight={700}
+          sx={{
+            color: "common.black",
+          }}
+        >
           {title}
         </Typography>
         <Typography
           variant={"subtitle1"}
           sx={{
-            color: "grey.500",
             fontWeight: {
               xs: 500,
               md: 400,

@@ -30,7 +30,7 @@ const materialTheme = createTheme({
       black: "#000000",
     },
     text: {
-      primary: "#000000",
+      primary: "#474747",
       secondary: "#FFFFFF",
     },
     action: {
@@ -42,15 +42,9 @@ const materialTheme = createTheme({
     grey: {
       50: "#E9E9E9",
       100: "#C9C9C9",
-      200: "#838383",
-      300: "#666666",
-      400: "#515151",
-      500: "#555555",
-      600: "#414141",
-      700: "#323232",
-      800: "#2E2E2E",
-      A100: "#BCBCBC",
-      A200: "#474747",
+      200: "#BCBCBC",
+      300: "#838383",
+      400: "#474747",
     },
   },
   typography: typography,

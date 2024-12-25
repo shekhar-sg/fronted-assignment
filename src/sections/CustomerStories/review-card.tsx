@@ -85,6 +85,8 @@ const ReviewCard = (props: ReviewCardProps) => {
         }
         title={name}
         titleTypographyProps={{
+          color: "textPrimary",
+          fontWeight: 500,
           fontSize: { xs: 16, sm: 20 },
           display: "block",
         }}
@@ -92,7 +94,6 @@ const ReviewCard = (props: ReviewCardProps) => {
         subheaderTypographyProps={{
           color: "textPrimary",
           fontSize: { xs: 15, sm: 18 },
-          sx: { color: "grey.600" },
           textAlign: "start",
           ...nexa.style,
         }}
@@ -137,11 +138,7 @@ const ReviewCard = (props: ReviewCardProps) => {
         >
           {`"${service}"`}
         </Typography>
-        <Typography
-          variant={"body2"}
-          fontFamily={"inherit"}
-          sx={{ color: "grey.500" }}
-        >
+        <Typography variant={"body2"} fontFamily={"inherit"}>
           {comment}
         </Typography>
       </CardContent>

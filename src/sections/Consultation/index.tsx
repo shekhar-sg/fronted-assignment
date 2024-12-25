@@ -43,6 +43,7 @@ const Consultation = () => {
                 data={cardData}
                 sx={{
                   textAlign: index === 0 ? "center" : "start",
+                  color: index === 0 ? "primary.main" : undefined,
                 }}
               />
             </Grid2>

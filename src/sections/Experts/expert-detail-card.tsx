@@ -116,6 +116,9 @@ const ExpertDetailCard = (props: ExpertDetailCardProps) => {
           fontWeight={"bold"}
           marginBottom={1}
           lineHeight={1}
+          sx={{
+              color:'common.black'
+          }}
         >
           {name}
         </Typography>
@@ -123,7 +126,7 @@ const ExpertDetailCard = (props: ExpertDetailCardProps) => {
           {...inter.style}
           fontSize={"15px !important"}
           fontWeight={500}
-          sx={{ color: "grey.200", mb: 1.5 }}
+          sx={{ color: "grey.300", mb: 1.5 }}
           lineHeight={1}
         >
           {qualification}

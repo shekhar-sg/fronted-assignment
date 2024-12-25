@@ -64,6 +64,7 @@ const Footer = () => {
         }}
         textAlign={"left"}
         lineHeight={0.9}
+        color={"common.black"}
       >
         <FooterTitle marginBottom={1.75}>{title}</FooterTitle>
         <Typography>{follow_us.email}</Typography>
@@ -78,11 +79,23 @@ const Footer = () => {
               <IconButton
                 key={platform}
                 href={href}
+                color={"primary"}
                 sx={{
                   "--size": "40px",
                   width: "var(--size)",
                   height: "var(--size)",
                   bgcolor: "primary.main",
+                  ":hover": {
+                    bgcolor: "transparent",
+                    border: "1px solid",
+                    svg: {
+                      fill: "currentColor",
+                      stroke: "currentColor",
+                      path: {
+                        fill: "currentColor",
+                      },
+                    },
+                  },
                 }}
               >
                 <Icon />
@@ -102,6 +115,7 @@ const Footer = () => {
           md: 0,
         }}
         textAlign={"left"}
+        color={"text.primary"}
       >
         <FooterTitle fontWeight={700} marginBottom={1}>
           {otherLinkTitle}
@@ -112,9 +126,12 @@ const Footer = () => {
               component={NextLink}
               key={link.title}
               sx={{
+                color: "currentColor",
                 display: "block",
-                color: "grey.A200",
                 textDecoration: "none",
+                ":hover": {
+                  textDecoration: "underline",
+                },
               }}
               {...link}
             >
