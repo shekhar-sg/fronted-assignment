@@ -3,7 +3,7 @@ import SectionWrapper from "@/components/section-wrapper";
 import { IconButton, Stack } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ExpertDetailCard from "./expert-detail-card";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { ChevronRight, East, West } from "@mui/icons-material";
 import ExpertsSectionData from "@/data/Experts";
 import LinkButton from "@/components/link-button";
@@ -29,6 +29,10 @@ const Experts = () => {
       Title={heading}
       titleUnderlined
       sx={{
+        px: {
+          xs: 0,
+          lg: 12.5,
+        },
         py: {
           xs: 10,
           md: 7,
@@ -39,10 +43,6 @@ const Experts = () => {
         sx={{
           flexDirection: "row",
           columnGap: 6.25,
-          px: {
-            xs: 2,
-            sm: 0,
-          },
           button: {
             display: {
               xs: "none",
@@ -57,7 +57,15 @@ const Experts = () => {
           },
         }}
       >
-        <IconButton disableRipple onClick={() => handleTransition("prev")}>
+        <IconButton
+          centerRipple={false}
+          color={"primary"}
+          sx={{
+            display: "flex !important",
+            alignItems: "center",
+          }}
+          onClick={() => handleTransition("prev")}
+        >
           <West />
         </IconButton>
         <Stack
@@ -66,6 +74,7 @@ const Experts = () => {
           sx={{
             pb: 6.75,
             "& .swiper-wrapper": {
+              px: { xs: 3, lg: 0 },
               "& .swiper-slide": {
                 width: "auto",
                 mr: 7,
@@ -77,7 +86,8 @@ const Experts = () => {
           }}
           slidesPerView={"auto"}
           loop
-          modules={[Pagination]}
+          autoplay
+          modules={[Autoplay, Pagination]}
           pagination={{
             clickable: true,
             dynamicBullets: true,
@@ -91,7 +101,15 @@ const Experts = () => {
             );
           })}
         </Stack>
-        <IconButton disableRipple onClick={() => handleTransition("next")}>
+        <IconButton
+          centerRipple={false}
+          color={"primary"}
+          sx={{
+            display: "flex !important",
+            alignItems: "center",
+          }}
+          onClick={() => handleTransition("next")}
+        >
           <East />
         </IconButton>
       </Stack>

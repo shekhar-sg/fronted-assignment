@@ -3,7 +3,7 @@ import { Stack } from "@mui/material";
 import SectionWrapper from "@/components/section-wrapper";
 import ReviewCard from "./review-card";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import CustomerStoriesSectionData from "@/data/CustomerStories";
 
 const { heading, cards } = CustomerStoriesSectionData;
@@ -20,7 +20,8 @@ const CustomerStories = () => {
         bgcolor: "background.paper",
       }}
       sx={{
-        overflow: "hidden",
+        px: { xs: 0 },
+        maxWidth: "100%",
         py: {
           xs: 8,
           md: 7,
@@ -32,7 +33,7 @@ const CustomerStories = () => {
         sx={{
           overflow: "visible",
           "& .swiper-wrapper": {
-            px: 1,
+            px: 3,
             "& .swiper-slide": {
               width: "auto",
               mr: { xs: 2, md: 4 },
@@ -42,8 +43,10 @@ const CustomerStories = () => {
             },
           },
         }}
+        loop
+        autoplay
         slidesPerView={"auto"}
-        modules={[Pagination]}
+        modules={[Autoplay, Pagination]}
         pagination={{
           clickable: true,
           dynamicBullets: true,

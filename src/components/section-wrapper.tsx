@@ -92,6 +92,7 @@ export default SectionWrapper;
 
 const sectionSx: SxProps<Theme> = {
   width: 1,
+  overflow:'hidden',
 };
 
 const contentSx: SxProps<Theme> = {

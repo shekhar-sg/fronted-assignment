@@ -24,7 +24,6 @@ const Approach = () => {
         },
       }}
       sx={{
-          overflow:'hidden',
         py: {
           xs: 8,
           md: 12,
