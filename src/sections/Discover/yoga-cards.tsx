@@ -1,10 +1,10 @@
 "use client";
 import { Box, BoxProps, Stack, Typography } from "@mui/material";
-import { DiscoverAyurvedaSectionData } from "@/data";
 import { sxToArray } from "@/styles/utils";
+import DiscoverSectionData from "@/data/Discover";
 
 interface YogaCardsProps extends Omit<BoxProps, "children"> {
-  data: (typeof DiscoverAyurvedaSectionData.cards)[number];
+  data: (typeof DiscoverSectionData.cards)[number];
 }
 
 const YogaCards = (props: YogaCardsProps) => {
@@ -28,7 +28,7 @@ const YogaCards = (props: YogaCardsProps) => {
           minWidth: {
             lg: 350,
           },
-          height: 'auto',
+          height: "auto",
           gap: 2,
           border: (theme) => ({
             xs: `1px solid ${theme.palette.grey[50]}`,
