@@ -29,10 +29,6 @@ const Experts = () => {
       Title={heading}
       titleUnderlined
       sx={{
-        px: {
-          xs: 0,
-          lg: 12.5,
-        },
         py: {
           xs: 10,
           md: 7,
@@ -46,8 +42,9 @@ const Experts = () => {
           button: {
             display: {
               xs: "none",
-              lg: "block",
+              lg: "flex",
             },
+            alignItems: "center",
             mt: "15%",
             width: 70,
             height: 70,
@@ -60,10 +57,6 @@ const Experts = () => {
         <IconButton
           centerRipple={false}
           color={"primary"}
-          sx={{
-            display: "flex !important",
-            alignItems: "center",
-          }}
           onClick={() => handleTransition("prev")}
         >
           <West />
@@ -73,11 +66,13 @@ const Experts = () => {
           onInit={(swiper) => setSwiper(swiper)}
           sx={{
             pb: 6.75,
+            width: 1,
+            maxWidth: 295 * 3 + 48 * 2,
+            overflow: { xs: "visible", lg: "hidden" },
             "& .swiper-wrapper": {
-              px: { xs: 3, lg: 0 },
               "& .swiper-slide": {
                 width: "auto",
-                mr: 7,
+                mr: 6,
                 "&:last-of-type": {
                   mr: 0,
                 },
@@ -104,10 +99,6 @@ const Experts = () => {
         <IconButton
           centerRipple={false}
           color={"primary"}
-          sx={{
-            display: "flex !important",
-            alignItems: "center",
-          }}
           onClick={() => handleTransition("next")}
         >
           <East />

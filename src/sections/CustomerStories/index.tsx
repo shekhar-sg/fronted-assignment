@@ -20,7 +20,6 @@ const CustomerStories = () => {
         bgcolor: "background.paper",
       }}
       sx={{
-        px: { xs: 0 },
         maxWidth: "100%",
         py: {
           xs: 8,
@@ -33,7 +32,6 @@ const CustomerStories = () => {
         sx={{
           overflow: "visible",
           "& .swiper-wrapper": {
-            px: 3,
             "& .swiper-slide": {
               width: "auto",
               mr: { xs: 2, md: 4 },
