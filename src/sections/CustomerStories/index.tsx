@@ -20,6 +20,7 @@ const CustomerStories = () => {
         bgcolor: "background.paper",
       }}
       sx={{
+        overflow: "hidden",
         py: {
           xs: 8,
           md: 7,

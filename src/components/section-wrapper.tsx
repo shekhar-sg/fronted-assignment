@@ -95,15 +95,14 @@ const sectionSx: SxProps<Theme> = {
 };
 
 const contentSx: SxProps<Theme> = {
-  overflow: "hidden",
-  width: 1,
-  mx: "auto",
-  maxWidth: 1440,
   px: {
     xs: 2,
     md: 3,
     lg: 12.5,
   },
+  width: 1,
+  mx: "auto",
+  maxWidth: 1440,
   textAlign: "center",
 };
 

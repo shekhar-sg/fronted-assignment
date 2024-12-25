@@ -46,6 +46,7 @@ export const FooterData = {
       },
     ],
   },
+  otherLinkTitle: "Information",
   otherLinks: [
     {
       title: "About Us",

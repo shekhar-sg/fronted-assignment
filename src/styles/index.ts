@@ -49,7 +49,8 @@ const materialTheme = createTheme({
       600: "#414141",
       700: "#323232",
       800: "#2E2E2E",
-      A100:"#BCBCBC"
+      A100: "#BCBCBC",
+      A200: "#474747",
     },
   },
   typography: typography,
