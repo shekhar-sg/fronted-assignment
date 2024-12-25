@@ -1,4 +1,6 @@
-import { IconProps } from "@/types";
+import { SVGProps } from "react";
+
+type IconProps = SVGProps<SVGSVGElement>;
 
 export const SpeechIcon = (props: IconProps) => (
   <svg

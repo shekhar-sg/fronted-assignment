@@ -7,8 +7,6 @@ import CustomerStories from "@/sections/CustomerStories";
 import Experts from "@/sections/Experts";
 import MobileApp from "@/sections/MobileApp";
 
-;
-
 const Home = () => {
   return (
     <>
