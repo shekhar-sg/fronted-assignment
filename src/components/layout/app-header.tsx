@@ -15,15 +15,16 @@ const AppHeader = () => {
         bgcolor: "secondary.main",
         color: "primary.main",
         fontWeight: 700,
+        position: "sticky",
       }}
       component={Toolbar}
     >
       <IconButton
         color={"primary"}
-        size={"large"}
         sx={{
+          position: "absolute",
           display: {
-            xs: "block",
+            xs: "flex",
             sm: "none",
           },
         }}
