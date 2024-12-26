@@ -42,6 +42,7 @@ const ExpertDetailCard = (props: ExpertDetailCardProps) => {
         gap: 3.5,
         pt: 5.25,
         boxShadow: "none",
+          // mx:"auto"
       }}
     >
       <Badge

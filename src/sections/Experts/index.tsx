@@ -68,11 +68,11 @@ const Experts = () => {
             pb: 6.75,
             width: 1,
             maxWidth: 295 * 3 + 48 * 2,
-            overflow: { xs: "visible", lg: "hidden" },
+            overflow: { xs: "visible", sm: "hidden" },
             "& .swiper-wrapper": {
               "& .swiper-slide": {
                 width: "auto",
-                mr: 6,
+                // mr: 6,
                 "&:last-of-type": {
                   mr: 0,
                 },
@@ -80,12 +80,19 @@ const Experts = () => {
             },
           }}
           slidesPerView={"auto"}
+          spaceBetween={48}
+          centeredSlides={true}
           loop
           autoplay
           modules={[Autoplay, Pagination]}
           pagination={{
             clickable: true,
             dynamicBullets: true,
+          }}
+          breakpoints={{
+            600: {
+              centeredSlides: false,
+            },
           }}
         >
           {cards.map((cardData, index) => {
